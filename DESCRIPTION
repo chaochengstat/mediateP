@@ -1,0 +1,12 @@
+Package: mediateP
+Type: Package
+Title: Mediation analysis based on the product method
+Version: 0.1.0
+Author: Chao Cheng
+Maintainer: Chao Cheng <c.cheng@yale.edu>
+Depends: R (>= 3.1.0)
+Imports: boot
+Description: R function for calculating the point and interval estimates for the NIE, TE and MP, based on the product method.
+License: GPL
+Encoding: UTF-8
+LazyData: true
