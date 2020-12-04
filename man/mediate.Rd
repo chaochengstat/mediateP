@@ -28,7 +28,7 @@ mediate(data, outcome, mediator, exposure, binary.outcome,
   \item{c.outcome}{A vector of numbers representing the conditional level of the confounding variables in the outcome model. The default value is a vector of 0.}
   \item{c.mediator}{A vector of numbers representing the conditional level of the confounding variables in the mediator model. The default value is a vector of 0.}
   \item{boot}{If a percentile bootstrap confidence interval needed to be added, set to 1. Otherwise, set to 0. The default value is 0.}
-  \item{R}{(Required if using bootstrap approach) The number of replications when apply the percentile bootstrap method to calculate the confidence interval. The default value is 1,000.}
+  \item{R}{(Required if using bootstrap approach) The number of replications when apply the percentile bootstrap method to calculate the confidence interval. The default value is 2,000.}
 }
 
 \author{
@@ -55,9 +55,9 @@ result=mediate(data=mydata, outcome="Y", mediator="M", exposure="X",
                  covariate.outcome=c("C1","C2"),
                  covariate.mediator=c("C1"),
                  x0=0, x1=1, c.outcome=c(0,1), c.mediator=c(0),
-                 boot=1, R=1000)
+                 boot=1, R=2000)
 
-round(result, 3)
+print(result)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory (show via RShowDoc("KEYWORDS")):
